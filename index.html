@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/specific.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Darstellung Sternleben</title>  
+        <script defer src="/scripts/customElements.js"></script> 
+        <script defer src="/scripts/main.js"></script>
+    </head>
+    <body> 
+        <img id="titleimg" src="https://cdn.eso.org/images/thumb300y/vlt-mw-potw.jpg" alt="">
+        <div id="heading">
+            <div id="astronomyIconBox"></div>
+            <img id="astronomyIcon" src="images/astronomy.png" alt="">
+            <h1>Ein Sternenleben</h1>
+            <h2>Am Beispiel der Sonne</h2>
+        </div>
+
+        <div id="aboutme">
+            <div id="aboutme-anchor"></div>
+            <img src="" alt="">
+            <div id="aboutmebox"></div>
+            <div id="aboutmestripe"></div>
+            <h3>Über das Projekt und mich</h3>
+            <p id="aboutmetext">Hallo, ich bin Robert Walz. Ich interessiere mich für Programmieren und Astronomie. Diese Website ist im Rahmen einer Seminarfacharbeit entstanden. Das Ziel dieser Website ist es, das Leben eines sonnenähnlichen Sterns anschaulich darzustellen<br> und Astronomie auch für den Laien interessant zu gestalten.<br></p>
+        </div>
+      
+        
+
+        <div class="infoBackround"></div>
+        
+        <div class="infoBox" id="gasInfo">
+            <div class="infoBspBox">
+                <h3 class="infoBspHeading">M42 | Orionnebel</h3>
+                <img class="infoBspImg" src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/orion-nebula-xlarge_web.jpg?itok=9xnhnRGn" alt="">
+                <p class="infoBspText">Der  <a href="https://www.nasa.gov/feature/goddard/2017/messier-42-the-orion-nebula">Orionnebel</a> ist ein typisches Sternentstehungszentrum, in dem tausende von neuen Sternen entstehen.</p>
+            </div>
+            
+            <img class="infoImg" src="/images/GaswolkeArrow0.svg" alt="">
+            <h3 class="infoHeading">Molekülwolke</h3>
+            <p class="infoText">
+                Eine Molekülwolke besteht hauptsächlich aus molekularem Wasserstoff.
+                Es lassen sich aber auch andere Elemente/Verbindungen, wie zum Beispiel Kohlenstoffmonoxid finden.
+                Wenn eine bestimmte Temperatur, Druck unnd Dichte erreicht sind, wirken gravitative Kräfte zum Zentrum der Wolke und eine Rotation ensteht.     
+            </p>
+            <img class="cancelButton" src="/images/cancel.png" alt="">
+        </div>
+
+        <div class="infoBox" id="protoInfo">
+            <div class="infoBspBox">
+                <h3 class="infoBspHeading">M16 | Adlernebel (Säulen der Schöpfung)</h3>
+                <img class="infoBspImg" src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/hubble_birthofstars_0.jpg?itok=V2crHtH0" alt="">
+                <p class="infoBspText">In den <a href="https://www.nasa.gov/feature/goddard/2017/messier-16-the-eagle-nebula">Säulen der Schöpfung</a> enstehen viele neue Protosterne (Im Bild erkennbar als rote Punkte.)</p>
+            </div>
+            
+            <img class="infoImg" src="/images/Protostern1.svg" alt="">
+            <h3 class="infoHeading">Protostern  </h3>
+            <p class="infoText">
+                Ein Protostern das Produkt eines gravitativen Kollaps, ein frisch enstandener Stern, in dem die Kernfusion gerade begonnen hat. Er rotiert um die eigene Achse und seine Form ist noch nicht klar definiert.              
+            </p>
+            <img class="cancelButton" src="/images/cancel.png" alt="">
+        </div>
+
+        <div class="infoBox" id="sunInfo">
+            <div class="infoBspBox">
+                <h3 class="infoBspHeading">Die Sonne</h3>
+                <img class="infoBspImg" src="https://photojournal.jpl.nasa.gov/browse/PIA22242.gif" alt="">
+                <p class="infoBspText">Die <a href="https://de.wikipedia.org/wiki/Sonne">Sonne</a> wird von der NASA als "gelber Zwergstern" bezeichnet. Sie hat eine geringe Masse und Leuchtkraft, aber lebt dafür ca. 10 Milliarden Jahre.</p>
+            </div>
+            
+            <img class="infoImg" src="/images/PPProzess.svg" alt="">
+            <h3 class="infoHeading">Stern</h3>
+            <p class="infoText">
+                In einem sonnenänhlichen Stern läuft den Großteil seiner Lebenszeit der Proto-Proton-Fusionsprozess ab. Es werden 4 Wasserstoff-Atome zu einem Helium-Atom fusioniert. Dabei wird Energie frei, welche wir  auf der Erde on From von Starhlung (Licht und Wärme) erfahren.      
+            </p>
+            <img class="cancelButton" src="/images/cancel.png" alt="">
+        </div>
+
+        <image-diagram id="diagram">
+            <div class="diagramBox">
+                <h2 class="diagram-header">Die Entstehung</h2>
+            </div>
+            
+            <div class="timespan">
+                <div class="mainstripe"></div>
+                <div id="gasstripe" class="stripe"></div>
+                <div id="protostripe" class="stripe"></div>
+                <div id="sunstripe" class="stripe"></div>
+            </div>
+            
+            <img class= "gas" src="/images/GaswolkeArrow0.svg" alt="">
+            <div class="gasanimtrigger">
+                <img id="arrow1" class="arrow" src="/images/orangeArrow.png" alt="">
+                <img id="arrow2" class="arrow" src="/images/orangeArrow.png" alt="">
+                <img id="arrow3" class="arrow" src="/images/orangeArrow.png" alt="">
+                <img id="arrow4" class="arrow" src="/images/orangeArrow.png" alt="">
+            </div>
+
+            <img class="protostar" src="/images/Protostern1.svg" alt="">
+            <img class="sun" src="/images/Sonne.svg" alt="">
+            
+        </image-diagram>
+
+        <div class="infoBox" id="giantInfo">
+            <div class="infoBspBox">
+                <h3 class="infoBspHeading">Roter Riese</h3>
+                <img class="infoBspImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Antares_-_Eso1726a.tif/lossy-page1-465px-Antares_-_Eso1726a.tif.jpg" alt="to be placed">
+                <p class="infoBspText"><a href="http://simbad.u-strasbg.fr/simbad/sim-id?Ident=HR+6134">Antares</a> ist ein roter Riese. Im Vergleich zur Sonne hat er im Moment eine 10.000mal höhere Leuchtkraft, eine deutlich geringere Dichte und ein 800mal größeren Radius.</p>
+            </div>
+            
+            <img class="infoImg" src="/images/Giant.svg" alt="">
+            <h3 class="infoHeading">Roter Riese</h3>
+            <p class="infoText">
+                Wenn die Sonne ans Ende ihrer Lebenszeit kommt und der Wasserstoff komplett zu Helium fusioniert wurde, bläst die Sonne sich zu einem roten Riesenstern auf. Dabei steigt ihr Durchmesser um Faktor 100 und ihre Leuchtkraft um den Faktor 10.000, da die Oberfläche entsprechend groß ist.
+            </p>
+            <img class="cancelButton" src="/images/cancel.png" alt="">
+        </div>
+
+        <div class="infoBox" id="nebulaInfo">
+            <div class="infoBspBox">
+                <h3 class="infoBspHeading">M57 | Ringnebel</h3>
+                <img class="infoBspImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/NGC_6720_%22Ring%22.png/465px-NGC_6720_%22Ring%22.png" alt="to be placed">
+                <p class="infoBspText">Der Ringnebel ist ein Überrest eines sonnenähnlichen Sterns. Besonders bekannt ist er durch die klar erkennbaren, ehemaligen Schalen des Sterns, aus dem er enstanden ist.</p>
+            </div>
+            
+            <img class="infoImg" src="/images/Nebula.svg" alt="">
+            <img class= "infoImg" src="/images/Dwarf.svg" alt="">
+            <h3 class="infoHeading">Planetarischer Nebel</h3>
+            <p class="infoText">
+                Nach dem Riesenstadium wird die Sonne ihre Schalen abstoßen. Dieser Prozess dauert nur wenige Jahrtausende. Zurück bleibt ein weißer Zwergstern und die, in rot dargestellte, Wasserstoffschale, sowie, die in gelb dargestellte Heliumschale. Beide breiten sich sehr schnell aus, bis sie sich schließlich endgültig verflüchtigen.
+            </p>
+            <img class="cancelButton" src="/images/cancel.png" alt="">
+        </div>
+
+        <div class="infoBox" id="dwarfInfo">
+            <div class="infoBspBox">
+                <h3 class="infoBspHeading">Sirius B</h3>
+                <img class="infoBspImg" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Sirius_A_and_B_Hubble_photo.jpg" alt="to be placed">
+                <p class="infoBspText">Sirius B ist der Überrest eines Sterns im Doppelsternsystem Sirius. Er ist nur sehr schwer am Nachthimmel beobachtbar. In der Grafik ist er der kleine, weiße Punkt link unter dem Stern. </p>
+            </div>
+            
+            <img class= "infoImg" src="/images/Dwarf.svg" alt="">
+            <h3 class="infoHeading">Weißer Zwergstern</h3>
+            <p class="infoText">
+                Nachdem die abgestoßenen Schalen nicht mehr sichtbar sind, bleibt nur noch ein weißer Zwergstern übrig. Dieser hat nur noch eine sehr geringe Leuchtkaft, aber eine verhältnismäßig hohe Oberflächentemperatur.
+            </p>
+            <img class="cancelButton" src="/images/cancel.png" alt="">
+        </div>
+
+        <death-diagram>
+            <div class="diagramBox">
+                <h2 class="diagram-header">Der Tod</h2>
+            </div>
+
+            <div class="timespan">
+                <div id="life-stripe" class="mainstripe"></div>
+                <div class="timearrow"></div>
+                <div id="nebulastripe" class="stripe"></div>
+                <div id="dwarfstripe" class="stripe"></div>
+                <div id="giantstripe" class="stripe"></div>
+            </div>
+
+            <img class="giant" src="/images/Giant.svg" alt="">
+            <img class="nebulaDwarf" src="/images/Dwarf.svg" alt="">
+            <img class="nebula" src="/images/Nebula.svg" alt="">
+            <img class="dwarf" src="/images/Dwarf.svg" alt="">
+
+        </death-diagram>
+
+        <div id="footerElement">
+            <div id="footerBox"></div>
+            <footer>2022 Robert Johannes Walz | Icons by Freepik from <a href="https://www.flaticon.com/authors/freepik">Flaticon</a></footer>
+        </div>
+
+        <div class="links">
+            <div id="links-anchor"></div>
+            <h3>Links</h3>
+            <p>
+                <p>Programme die zum Erstellen dieser Website genutzt wurden:</p>
+                <ol>
+                    <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+                    <li><a href="https://inkscape.org/de/">Inkscape</a></li>
+                    <li><a href="https://www.mozilla.org/de/firefox/">Firefox</a></li>
+                </ol>
+
+                <p>Resourcen die zum Erstellen dieser Website genutzt wurden:</p>
+                <ol>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML Basics</a></li>
+                    <li><a href=" https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS Basics</a></li>
+                    <li><a href="https://exploringjs.com/impatient-js)">Impatient Js</a></li>
+                </ol>
+            </p>
+
+            <p>Vielen Dank an Rudolf Michalik für das Bereitstellen von Büchern und Fachzeitschriften.</p>
+            <p class="quote"><span>"The global object is now considered a mistake that JavaScript can&apos;t get rid of, due to backward compatibility. <br>It affects performance negatively and is generally confusing." </span><a href="https://exploringjs.com/impatient-js/ch_variables-assignment.html#global-variables-and-the-global-object">(this)</a></p>
+        </div>
+
+        <div id="navbar">
+            <nav> 
+                <div id="navbox"></div>
+                <a class="navlink" href="#titleimg">Home</a>
+                <a class="navlink" href="#aboutme-anchor">Über das Projekt</a>
+                <a class="navlink" href="#diagram">Sternleben</a>
+                <a class="navlink" href="#links-anchor">Links</a>   
+            </nav>
+            
+        </div>
+    </body>
+</html>

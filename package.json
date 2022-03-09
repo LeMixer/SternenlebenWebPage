@@ -1,0 +1,16 @@
+{
+  "name": "sternenlebenwebpage",
+  "version": "0.1.0",
+  "description": "Website zur Präsentierung der Ergebnisse der Facharbeit von Robert Walz",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Johannes Walz",
+  "license": "ISC",
+  "devDependencies": {
+    "@phoenix35/eslint-config": "github:Phoenix35/eslint-config",
+    "eslint": "^8.10.0",
+    "eslint-plugin-jsdoc": "^37.9.6"
+  }
+}

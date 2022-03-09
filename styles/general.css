@@ -1,0 +1,49 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3vw;
+    height: 100%;
+    color: white;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    background-color:#313131;
+    overflow-y: scroll;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.infoBackround { 
+    height: 300vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 80em;
+    z-index: 1;
+    pointer-events: none;
+    transition: all ease 1000ms;
+
+}
+
+.infoBackround.infoScreen {
+    opacity: 0.6;
+    transition: all ease 1000ms;
+    pointer-events: all;
+}
+
+
+
+
+
+

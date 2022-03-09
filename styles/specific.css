@@ -1,0 +1,627 @@
+/* navbar */
+
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbox{
+    position: absolute;
+    background-color:rgb(41, 41, 41);
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 5px 7px 3px rgb(36, 36, 36) ;
+    z-index: 1;
+}
+
+
+.navlink {
+    position: relative;
+    float: left;
+    display: inline;
+    margin-left: 50px;
+    margin-right: 0px;
+    z-index: 10;
+    text-align: center;
+    top: 10px;
+}
+
+#titleimg {
+    width: 100%;
+}
+
+/* header */
+
+#heading {
+    position: relative;
+    top: 0px;
+}
+
+#astronomyIcon {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50px;
+    top: 78px;
+}
+
+#astronomyIconBox {
+    /* background-color: rgb(41, 41, 41); */
+    background-color: orange;
+    height: 100px;
+    width: 5px;
+    position: absolute;
+    left: 170px;
+    top: 78px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder; 
+    position: absolute; 
+    left: 200px;
+    top: 30px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    font-weight:lighter;
+    position: absolute;
+    color: rgb(204, 204, 204);
+    top: 110px;
+    left: 200px ;
+}
+
+/* About me */
+
+#aboutme-anchor {
+    position: absolute;
+    top: -10em;   
+}
+
+#aboutme {
+    position: relative;
+    top: 700px;
+}
+
+#aboutmetext {
+    left: 30px;
+    position: absolute;
+    top: 70px;
+    max-width: 50%;
+}
+
+#aboutmebox {
+    position: absolute;
+    width: 70%;
+    height: 20em;
+    background-color: rgb(41, 41, 41);
+    box-shadow: 5px 3px 10px 3px rgb(36, 36, 36);
+}
+
+#aboutmestripe {
+    background-color: orange;
+    height: 360px;
+    width: 5px;
+    position: absolute;
+    left: 0.5em;
+    top: 2.5em;
+}
+
+h3 {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+/* Diagram */
+
+image-diagram {
+    position: relative;
+    top: 80em;
+}
+
+.diagramBox {
+    background-color: rgb(41, 41, 41);
+    box-shadow: 5px 3px 10px 3px rgb(36, 36, 36);
+    /* position: absolute; */
+    width: 90%;
+    height: 30em;
+    position: relative;
+    top: 20px;
+    margin-top: 10em;
+}
+
+.diagram-header {
+    align-content: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3vw;
+}
+
+.timespan {
+    position: relative;
+    bottom: 50px;
+}
+
+.timespan > .mainstripe {
+    background-color: orange;
+    width: 90%;
+    height: 0.3em;
+    bottom: 1em;
+    position: absolute;
+    
+}
+
+.stripe {
+    background-color: orange;
+    width: 0.3em;
+    height: 1.5em;
+    position: absolute;
+    bottom: 0em;
+}
+
+#life-stripe {
+    width: 80%;
+}
+
+#gasstripe {
+    left: 9em;
+}
+
+#protostripe {    
+    left: 31.5em;
+}
+
+#sunstripe {
+    left: 57.5em;
+}
+
+#nebulastripe {
+    left: 9em;
+}
+
+#dwarfstripe {
+    left: 31.5em;
+}
+
+#giantstripe {
+    left: 54.5em;
+}
+
+.timespan > .timearrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 50px solid orange;
+    border-bottom: 10px solid transparent;
+    position: relative;
+    bottom: 13px;
+    right: -60em;
+}
+
+
+image-diagram > img
+{
+    max-width: 20%;
+    height: auto;
+    position: relative;
+    bottom: 26em;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+death-diagram > img 
+{
+    max-width: 20%;
+    height: auto;
+    position: relative;
+    bottom: 26em;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* diagram content */
+
+
+.gas {
+    left: 0.5em;
+}
+
+.gasanimtrigger {
+    width: 8em;
+    height: 10em;
+    position: relative;
+    top: -42em;
+    left: 4em;
+    cursor: pointer;
+}
+
+image-diagram > .gasanimtrigger > .arrow {
+    max-width: 30%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: block;
+    transition: 1000ms;
+    opacity: 0;
+    color: orange;
+}
+#arrow1 {
+    bottom: 10em;
+    left: 0em;  
+    transform: rotate(45deg);
+}
+
+#arrow2 {
+    bottom: 10em;
+    left: 7em;
+    transform: rotate(135deg);
+}
+
+#arrow3 {
+    bottom: -3em;
+    left: 0em;
+    transform: rotate(315deg);
+}
+
+#arrow4 {
+    bottom: -3em;
+    left: 7em;
+    transform: rotate(225deg);
+}
+
+
+/* gas animation */
+
+
+.gasanimtrigger:hover #arrow1 {
+    transform: translate(1em, 1em) rotate(90deg);
+    transition: all ease 1000ms;
+    opacity: 1;
+}
+
+.gasanimtrigger:hover #arrow2 {
+    transform: translate(-1em, 1em) rotate(140deg);
+    transition: all ease 1000ms;
+    opacity: 1;
+}
+
+.gasanimtrigger:hover #arrow3 {
+    transform: translate(1em, -1em) rotate(330deg);
+    transition: all ease 1000ms;
+    opacity: 1;
+}
+
+.gasanimtrigger:hover #arrow4 {
+    transform: translate(-1em, -1em) rotate(250deg);
+    transition: all ease 1000ms;
+    opacity: 1;
+}
+
+/* protostar animation */
+
+
+
+.protostar {
+    left: 24em;
+    top: -58em;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+
+.protostar:hover {
+    animation-name: rotate;
+    animation-timing-function: ease;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Sun animation */
+
+
+.sun {
+    left:50em;
+    top: -80em;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+}
+
+.sun:hover {
+    content: url("/images//SonneQuerschnitt.svg");
+}
+
+
+/* giant animation */
+
+.giant {
+    left: 1.5em;
+    transition: all ease 2000ms;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25em;
+}
+
+
+.giant:hover {
+    transform: scale(1.5, 1.5);
+    transition: all ease 3000ms;
+}
+
+
+/* nebula animation */
+
+.nebula {
+    position: absolute;
+    left: 24em;
+    bottom: 25em;
+    transition: all ease 2000ms;
+    cursor: pointer;
+    
+}
+
+.nebulaDwarf
+{
+    position: absolute;
+    left: 24em;
+    bottom: 25em;
+}
+
+.nebula:hover {
+    transform: scale(1.5, 1.5);
+    transition: all ease 3000ms;
+}
+
+
+/* dwarf */
+
+.dwarf {
+    position: absolute;
+    bottom: 25em;
+    left: 47em;
+}
+
+
+
+/* info screen */
+
+.infoBox { 
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    right: 10%;
+    bottom: 10%;
+    background-color: lightgray;
+    border: 0.2em solid gray;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease 300ms;
+    z-index: 1;
+}
+
+.infoBox.infoScreen > .infoBspBox a {
+    pointer-events: all;
+}
+
+.infoBox.infoScreen > .infoBspBox a:hover {
+    color: orange;
+}
+
+/* .info > a {
+    pointer-events: all;
+}
+
+.infoBspText > a:hover {
+    color: orange;
+} */
+
+
+.cancelButton {
+    width: 2em;
+    right: 0.5em;
+    top: 0.5em;
+    position: absolute;
+}
+
+#protoInfo.infoScreen {
+    opacity: 1;
+}
+
+#gasInfo.infoScreen {
+    opacity: 1;
+}
+
+#sunInfo.infoScreen {
+    opacity: 1;
+}
+
+#giantInfo.infoScreen {
+    opacity: 1;
+}
+
+#nebulaInfo.infoScreen {
+    opacity: 1;
+}
+
+#dwarfInfo.infoScreen {
+    opacity: 1;
+}
+
+#sunInfo > .infoImg {
+    width: 40%;
+    left: 2em;
+    bottom: 3em;
+}
+
+.infoHeading {
+    position: absolute;
+    color: orange;
+    font-size: 2vw;
+    background-color: rgb(41, 41, 41);
+    padding: 0.5em 3em 0.5em 2em;
+    left: 50%;
+}
+
+.infoText {
+    position: absolute;
+    color: black;
+    top: 8em;
+    width: 40%;
+    left: 50%;
+} 
+
+.infoImg {
+    position: absolute;
+    left: -4em;
+    bottom: -2em;
+}
+
+.infoBspBox {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    bottom: 10%;
+    right: 67%;
+    background-color: lightgray;
+    border: 0.2em solid gray;
+}
+
+.infoBspHeading {
+    position: absolute;
+    color: orange;
+    font-size: 1.2vw;
+    background-color: rgb(41, 41, 41);
+    padding: 0.5em 1em;
+    right: 10%;
+}
+
+.infoBspImg {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+.infoBspText {
+    color: black;
+    font-size: 0.8em;
+    top: 75%;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+}
+
+#giantInfo > .infoBspBox > .infoBspText {
+    top: 72%;
+}
+
+#nebulaInfo > .infoBspBox > .infoBspText {
+    top: 71%;
+}
+
+#nebulaInfo, #dwarfInfo > .infoHeading {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#nebulaInfo > .infoImg {
+   max-width: 20em; 
+   left: 0.5em;
+   bottom: 2em;
+}
+
+#dwarfInfo > .infoBspBox > .infoBspImg {
+    top: 18%;
+}
+
+#dwarfInfo > .infoBspBox > .infoBspText {
+    top: 74%;
+}
+
+
+
+/* links and fun */
+#links-anchor {
+    position: absolute;
+    top: -10%;
+}
+
+.links {
+    position: relative;
+    top: 20em
+}
+
+.links > h3 {
+    font-size: 3vw;
+    position: relative;
+    padding-bottom: 5%;
+}
+
+.links > ol {
+    position: relative;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.links > p {
+    padding-left: 2%;
+}
+
+.quote {
+    padding-top: 10%;
+}
+
+.quote > span {
+    font-style: italic;
+}
+
+ 
+/* footer */
+
+#footerElement {
+    position: relative;
+    top: 80em;
+}
+
+#footerBox {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(41, 41, 41);
+    position: absolute;
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    left: 36%;
+    top: 14px;
+}
+
+
+
