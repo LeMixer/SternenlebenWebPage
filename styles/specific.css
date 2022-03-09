@@ -363,7 +363,7 @@ image-diagram > .gasanimtrigger > .arrow {
     transition: all ease 2000ms;
     cursor: pointer;
     position: absolute;
-    bottom: 25em;
+    bottom: 50em;
 }
 
 
@@ -378,7 +378,7 @@ image-diagram > .gasanimtrigger > .arrow {
 .nebula {
     position: absolute;
     left: 24em;
-    bottom: 25em;
+    bottom: 50em;
     transition: all ease 2000ms;
     cursor: pointer;
     
@@ -388,7 +388,7 @@ image-diagram > .gasanimtrigger > .arrow {
 {
     position: absolute;
     left: 24em;
-    bottom: 25em;
+    bottom: 50em;
 }
 
 .nebula:hover {
@@ -401,7 +401,7 @@ image-diagram > .gasanimtrigger > .arrow {
 
 .dwarf {
     position: absolute;
-    bottom: 25em;
+    bottom: 50em;
     left: 47em;
 }
 
