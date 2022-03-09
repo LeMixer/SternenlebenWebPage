@@ -107,7 +107,7 @@ h2 {
 
 #aboutmestripe {
     background-color: orange;
-    height: 360px;
+    height: 18em;
     width: 5px;
     position: absolute;
     left: 0.5em;
@@ -497,7 +497,8 @@ image-diagram > .gasanimtrigger > .arrow {
 .infoImg {
     position: absolute;
     left: -4em;
-    bottom: -2em;
+    bottom: 0%;
+    max-width: 60%;
 }
 
 .infoBspBox {
@@ -520,7 +521,7 @@ image-diagram > .gasanimtrigger > .arrow {
 }
 
 .infoBspImg {
-    width: 90%;
+    max-width: 90%;
     height: auto;
     position: absolute;
     left: 5%;
