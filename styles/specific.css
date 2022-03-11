@@ -124,7 +124,12 @@ h3 {
 
 image-diagram {
     position: relative;
-    top: 80em;
+    top: 70em;
+}
+
+death-diagram {
+    top: 55em; 
+    position: relative;
 }
 
 .diagramBox {
@@ -134,8 +139,6 @@ image-diagram {
     width: 90%;
     height: 30em;
     position: relative;
-    top: 20px;
-    margin-top: 10em;
 }
 
 .diagram-header {
@@ -147,9 +150,13 @@ image-diagram {
     font-size: 3vw;
 }
 
+image-diagram > .timespan {
+    bottom: 2em;
+}
+
 .timespan {
     position: relative;
-    bottom: 50px;
+    bottom: 3em;
 }
 
 .timespan > .mainstripe {
@@ -178,11 +185,11 @@ image-diagram {
 }
 
 #protostripe {    
-    left: 31.5em;
+    left: 31.7em;
 }
 
 #sunstripe {
-    left: 57.5em;
+    left: 56.5em;
 }
 
 #nebulastripe {
@@ -190,11 +197,11 @@ image-diagram {
 }
 
 #dwarfstripe {
-    left: 31.5em;
+    left: 56em;
 }
 
 #giantstripe {
-    left: 54.5em;
+    left: 31.5em;  
 }
 
 .timespan > .timearrow {
@@ -208,28 +215,25 @@ image-diagram {
     right: -60em;
 }
 
+.images {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -25em;
+    align-items: center;
+}
 
-image-diagram > img
+.images > img
 {
     max-width: 20%;
     height: auto;
-    position: relative;
-    bottom: 26em;
-    display: flex;
     padding: 0;
     margin: 0;
+    flex-grow: 1;
+    margin-right: 9em;
 }
 
-death-diagram > img 
-{
-    max-width: 20%;
-    height: auto;
-    position: relative;
-    bottom: 26em;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
+
 
 
 /* diagram content */
@@ -242,13 +246,13 @@ death-diagram > img
 .gasanimtrigger {
     width: 8em;
     height: 10em;
-    position: relative;
+    position: absolute;
     top: -42em;
     left: 4em;
     cursor: pointer;
 }
 
-image-diagram > .gasanimtrigger > .arrow {
+.gasanimtrigger > .arrow {
     max-width: 30%;
     height: auto;
     padding: 0;
@@ -259,6 +263,7 @@ image-diagram > .gasanimtrigger > .arrow {
     opacity: 0;
     color: orange;
 }
+
 #arrow1 {
     bottom: 10em;
     left: 0em;  
@@ -317,7 +322,7 @@ image-diagram > .gasanimtrigger > .arrow {
 
 .protostar {
     left: 24em;
-    top: -58em;
+    top: 0em;
     animation-duration: 2s;
     animation-iteration-count: 1;
     cursor: pointer;
@@ -342,12 +347,6 @@ image-diagram > .gasanimtrigger > .arrow {
 
 
 .sun {
-    left:50em;
-    top: -80em;
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -362,8 +361,6 @@ image-diagram > .gasanimtrigger > .arrow {
     left: 1.5em;
     transition: all ease 2000ms;
     cursor: pointer;
-    position: absolute;
-    bottom: 50em;
 }
 
 
@@ -376,19 +373,19 @@ image-diagram > .gasanimtrigger > .arrow {
 /* nebula animation */
 
 .nebula {
-    position: absolute;
-    left: 24em;
-    bottom: 50em;
+
     transition: all ease 2000ms;
     cursor: pointer;
     
 }
 
-.nebulaDwarf
+.images > .nebulaDwarf
 {
-    position: absolute;
-    left: 24em;
-    bottom: 50em;
+    position: absolute; 
+    bottom: -0.2em;
+    left: 24.2em;
+    z-index: 0;
+    pointer-events: none;
 }
 
 .nebula:hover {
@@ -399,11 +396,7 @@ image-diagram > .gasanimtrigger > .arrow {
 
 /* dwarf */
 
-.dwarf {
-    position: absolute;
-    bottom: 50em;
-    left: 47em;
-}
+
 
 
 
@@ -545,7 +538,7 @@ image-diagram > .gasanimtrigger > .arrow {
     top: 71%;
 }
 
-#nebulaInfo, #dwarfInfo > .infoHeading {
+#nebulaInfo > .infoHeading , #dwarfInfo > .infoHeading {
     padding-right: 1em;
     padding-left: 1em;
 }
@@ -574,7 +567,7 @@ image-diagram > .gasanimtrigger > .arrow {
 
 .links {
     position: relative;
-    top: 20em
+    top: 60em
 }
 
 .links > h3 {
@@ -606,7 +599,7 @@ image-diagram > .gasanimtrigger > .arrow {
 
 #footerElement {
     position: relative;
-    top: 80em;
+    top: 120em;
 }
 
 #footerBox {
