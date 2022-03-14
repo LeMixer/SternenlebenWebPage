@@ -221,6 +221,7 @@ image-diagram > .timespan {
     position: relative;
     top: -25em;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .images > img
@@ -247,7 +248,8 @@ image-diagram > .timespan {
     width: 8em;
     height: 10em;
     position: absolute;
-    top: -42em;
+    top: 12em; 
+    /* 42em */
     left: 4em;
     cursor: pointer;
 }
