@@ -60,22 +60,22 @@
 }
 
 h1 {
-    font-size: 50px;
-    text-align: center;
+    font-size: 4vw;
+    text-align: left;
     font-weight: bolder; 
-    position: absolute; 
-    left: 200px;
-    top: 30px;
+    position: relative; 
+    left: 3.2em;
+    top: 0.9em;
 }
 
 h2 {
-    font-size: 35px;
-    text-align: center;
-    font-weight:lighter;
-    position: absolute;
+    font-size: 2.5vw;
+    text-align: left;
+    font-weight: lighter;
+    position: relative;
     color: rgb(204, 204, 204);
-    top: 110px;
-    left: 200px ;
+    top: 0.25em;
+    left: 5.2em;
 }
 
 /* About me */
