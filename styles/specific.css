@@ -162,7 +162,22 @@ image-diagram > .timespan {
 
 .timespan {
     position: relative;
+    bottom: 4em;
+}
+
+image-diagram > .timespan {
     bottom: 3em;
+}
+
+.timespan > p {
+    font-size: 1vw;
+    position: absolute;
+    color: orange;
+}
+
+#textindex {
+    right: 14%;
+    bottom: 2.5em;
 }
 
 .timespan > .mainstripe {
@@ -180,6 +195,24 @@ image-diagram > .timespan {
     height: 1.5em;
     position: absolute;
     bottom: 0em;
+}
+
+.year-container  {
+    position: absolute;
+    left: 6em;
+    bottom: -3em;
+    display: flex;
+    justify-content: center;
+    gap: 20.2em;
+}
+
+image-diagram > .timespan > .year-container{
+    left: 8.8em;
+    gap: 21.3em;
+}
+
+.year-container * {
+    color: orange;
 }
 
 #life-stripe {
