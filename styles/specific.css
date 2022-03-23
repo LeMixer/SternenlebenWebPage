@@ -156,10 +156,6 @@ death-diagram {
     font-size: 3vw;
 }
 
-image-diagram > .timespan {
-    bottom: 2em;
-}
-
 .timespan {
     position: relative;
     bottom: 4em;
@@ -180,13 +176,40 @@ image-diagram > .timespan {
     bottom: 2.5em;
 }
 
+.dotted-line {
+    display: flex;
+    gap: 0.6em;
+    position: absolute;
+    bottom: 1em;
+}
+
+image-diagram > .timespan > .dotted-line {
+    right: 11.5em;
+}
+
+death-diagram > .timespan > .dotted-line {
+    left: 2em;
+}
+
+.dot {
+    height: 0.3em ;
+    width: 0.3em;
+    bottom: 1em;
+    background-color: orange;
+}
+
 .timespan > .mainstripe {
     background-color: orange;
-    width: 90%;
+    width: 80%;
     height: 0.3em;
     bottom: 1em;
     position: absolute;
     
+}
+
+#life-stripe {
+    width: 74%;
+    left: 5em;
 }
 
 .stripe {
@@ -215,9 +238,7 @@ image-diagram > .timespan > .year-container{
     color: orange;
 }
 
-#life-stripe {
-    width: 80%;
-}
+
 
 #gasstripe {
     left: 9em;
