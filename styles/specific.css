@@ -188,7 +188,7 @@ image-diagram > .timespan > .dotted-line {
 }
 
 death-diagram > .timespan > .dotted-line {
-    left: 2em;
+    left: 1.4em;
 }
 
 .dot {
@@ -295,7 +295,13 @@ image-diagram > .timespan > .year-container{
 }
 
 
-
+#scale-info {
+    font-style: italic;
+    position: absolute;
+    top: 32em;
+    width: 30em;
+    left: 1em;
+}
 
 /* diagram content */
 
