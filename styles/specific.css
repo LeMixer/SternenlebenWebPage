@@ -20,11 +20,11 @@
     position: relative;
     float: left;
     display: inline;
-    margin-left: 50px;
+    margin-left: 5em;
     margin-right: 0px;
     z-index: 10;
     text-align: center;
-    top: 10px;
+    top: 0.8em;
 }
 
 #titleimg {
