@@ -1,0 +1,223 @@
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 2.5vw;
+    }
+
+    .mobile-line-break {
+        display: block;
+    }
+
+    .infoBackround {
+        height: 500vw;
+        position: absolute;
+        top: 0;
+    }
+
+    #titleimg {
+        margin-top: 11%;
+    }
+
+    #heading {
+        margin-bottom: 20%;
+        margin-left: 5%;
+    }
+
+    #astronomyIcon {
+        max-width: 12%;
+        margin-left: -3%;
+        margin-top: 1.5%;
+    }
+
+    #astronomyIconBox {
+        margin-left: 4%;
+        height: 7em;
+    }
+
+    h1 {
+        font-size: 7vw;
+        margin-left: 5%;
+        margin-top: -1%;
+    }
+
+    h2 {
+        font-size: 4.5vw;
+        margin-left: 5%;
+        margin-top: 9%;
+    }
+
+    .navlink {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.2em;
+        margin-top: 0em;
+        flex-shrink: 0;
+        flex-basis: 5em;
+        
+    }
+
+    #navbox {
+        height: 8em;
+    }
+
+    nav{
+        justify-content: center;
+        gap: 12%;
+        align-items: center;
+    }
+
+    #aboutmebox {
+        height: 29em;
+        width: 80%;
+    }
+    #aboutmestripe {
+        height: 27em;
+        left: 1.3em;
+    }
+    #aboutmetext {
+        font-size: 1.3em;
+        max-width: 65%;
+        top: 6em;
+        left: 2.6em;
+    }
+    h3 {
+        left: 1.7em;
+        top: 1em;
+        margin-left: 0em;
+        font-size: 2em;
+    }
+
+    .images {
+        top: -20em;
+    }
+
+    image-diagram {
+        top: 65em;
+    }
+
+    death-diagram {
+        top: 60em; 
+    }
+
+    .diagram-header {
+        font-size: 5vw;
+        top: -0.5em;
+    }
+
+    #scale-info {
+        top: 28em;
+    }
+
+    .diagramBox {
+        height: 25em;
+    }
+
+    .infoBox {
+        height: 50%;
+    }
+
+    
+
+    .infoBspBox {
+        height: 50%;
+    }
+
+    .infoHeading {
+        left: 10%;
+        font-size: 3vw;
+    }
+
+    .infoText {
+        left: 13%;
+        font-size: 2.3vw;
+        width: 60%;
+        top: 14%;
+        position: relative;
+    }
+
+    .infoImg {
+        left: 10%;
+        top: 0%;
+        margin-top: 10%;
+        position: relative;
+    }
+
+    #nebulaInfo > .infoImg {
+        max-width: 20em; 
+        left: 10em;
+        bottom: 2em;
+     }
+
+    .infoBspHeading {
+        font-size: 1.6vw;
+        margin-top: 13%;
+        margin-bottom: 0;
+    }
+
+    .infoBspImg {
+        top: 0;
+        margin-top: 60%;
+
+    }
+
+    .infoBspText {
+        position: relative;
+        margin-top: 170%;
+        top: 0;
+        font-size: 2.2vw;
+        width: 65%;
+        bottom: 0;
+        height: fit-content;
+    }
+
+    #nebulaInfo > .infoBspBox > .infoBspText {
+        top: 0%;
+    }
+
+    #giantInfo > .infoBspBox > .infoBspText {
+        top: 0%;
+    }
+
+    #dwarfInfo > .infoBspBox > .infoBspText {
+        top: 0%;
+    }
+
+    #sunInfo > .infoBspBox > .infoBspImg {
+        left: 5%;
+    }
+
+    #dwarfInfo > .infoBspBox > .infoBspImg {
+        top: 0%;
+    }
+
+    #sunInfo > .infoImg {
+        left: 30%;
+        bottom: 0;
+        margin-top: 40%;
+        
+    }
+    
+    
+
+
+    .year-container {
+        gap: 145%;
+    }
+
+    death-diagram > .timespan > .year-container {
+        gap: 60%;
+    }
+
+    footer {
+        font-size: 2.5vw;
+        margin-left: 15%;
+    }
+
+
+    #nebulaInfo > .infoImg {
+        max-width: 20em; 
+        left: 5%;
+        bottom: 10%;
+    }
+    
+
+}
