@@ -42,6 +42,11 @@ a:hover {
     pointer-events: all;
 }
 
+.mobile-line-break {
+    display: none;
+    height: 0;
+}
+
 
 
 

@@ -5,6 +5,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/specific.css">
+        <link rel="stylesheet" href="styles/mobile.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,17 @@
         <script defer src="/scripts/main.js"></script>
     </head>
     <body> 
+
+        <div id="navbar">
+            <nav> 
+                <div id="navbox"></div>
+                <a class="navlink" href="#titleimg">Home</a>
+                <a class="navlink" href="#aboutme-anchor">Über das Projekt</a>
+                <a class="navlink" href="#diagram">Sternenleben</a>
+                <a class="navlink" href="#links-anchor">Links</a>   
+            </nav>
+            
+        </div>
         <img id="titleimg" src="https://cdn.eso.org/images/thumb300y/vlt-mw-potw.jpg" alt="">
         <div id="heading">
             <div id="astronomyIconBox"></div>
@@ -27,7 +39,7 @@
             <div id="aboutmebox"></div>
             <div id="aboutmestripe"></div>
             <h3>Über das Projekt und mich</h3>
-            <p id="aboutmetext">Hallo, ich bin Robert Walz. Ich interessiere mich für das Programmieren und die Astronomie. Diese Website ist im Rahmen einer Seminarfacharbeit entstanden, mit dem Ziel, das Leben eines sonnenähnlichen Sterns anschaulich darzustellen<br> und Astronomie auch für den Laien interessant zu gestalten.<br></p>
+            <p id="aboutmetext">Hallo, ich bin Robert Walz. Ich interessiere mich für das Programmieren und die Astronomie. Diese Website ist im Rahmen einer Seminarfacharbeit entstanden, mit dem Ziel, das Leben eines sonnenähnlichen Sterns anschaulich darzustellen   und Astronomie auch für den Laien interessant zu gestalten.<br></p>
         </div>
       
         
@@ -38,16 +50,16 @@
             <div class="infoBspBox">
                 <h3 class="infoBspHeading">M42 | Orionnebel</h3>
                 <img class="infoBspImg" src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/orion-nebula-xlarge_web.jpg?itok=9xnhnRGn" alt="">
-                <p class="infoBspText">Der  <a href="https://www.nasa.gov/feature/goddard/2017/messier-42-the-orion-nebula">Orionnebel</a> ist ein typisches Sternentstehungszentrum, in dem tausende von neuen Sternen entstehen.</p>
+                <p class="infoBspText" id="line">Der <a href="https://www.nasa.gov/feature/goddard/2017/messier-42-the-orion-nebula">Orionnebel</a> ist ein typisches Sternentstehungs&shy;zentrum, in dem in tausende von Protosternen die Kernfusion beginnt und so neue Sternen geboren werden.</p>
             </div>
             
-            <img class="infoImg" src="/images/GaswolkeArrow0.svg" alt="">
             <h3 class="infoHeading">Molekülwolke</h3>
             <p class="infoText">
                 Eine Molekülwolke besteht hauptsächlich aus molekularem Wasserstoff.
                 Es lassen sich aber auch andere Elemente oder Verbindungen, wie zum Beispiel Kohlenstoffmonoxid finden.
                 Wenn eine bestimmte Temperatur, ein bestimmter Druck und eine bestimmte Dichte erreicht sind, wirken gravitative Kräfte zum Zentrum der Wolke und eine Rotation entsteht.     
             </p>
+            <img class="infoImg" src="/images/GaswolkeArrow0.svg" alt="">
             <img class="cancelButton" src="/images/cancel.png" alt="">
         </div>
 
@@ -58,11 +70,11 @@
                 <p class="infoBspText">In den <a href="https://www.nasa.gov/feature/goddard/2017/messier-16-the-eagle-nebula">Säulen der Schöpfung</a> enstehen viele neue Protosterne. Im Bild erkennbar als rote Punkte.</p>
             </div>
             
-            <img class="infoImg" src="/images/Protostern1.svg" alt="">
             <h3 class="infoHeading">Protostern  </h3>
             <p class="infoText">
                 Ein Protostern ist das Produkt eines gravitativen Kollaps. Er befindet sich in der Phase, kurz bevor die Kernfusion einsetzt und er zu einen Vor-Hauptreihenstern wird. Er rotiert um die eigene Achse und seine Form ist noch nicht klar definiert, weshalb seine Dichte auch deutlich geringer, als die des nachfolgenden Hauptreihensternes, ist.              
             </p>
+            <img class="infoImg" src="/images/Protostern1.svg" alt="">
             <img class="cancelButton" src="/images/cancel.png" alt="">
         </div>
 
@@ -73,11 +85,11 @@
                 <p class="infoBspText">Die <a href="https://de.wikipedia.org/wiki/Sonne">Sonne</a> wird von der NASA als "gelber Zwergstern" bezeichnet. Sie hat eine geringe Masse und Leuchtkraft, aber lebt dafür ca. 10 Milliarden Jahre.</p>
             </div>
             
-            <img class="infoImg" src="/images/PPProzess.svg" alt="">
             <h3 class="infoHeading">Stern</h3>
             <p class="infoText">
                 In einem sonnenänhlichen Stern läuft den Großteil seiner Lebenszeit der Proto-Proton-Fusionsprozess ab. Es werden vier Wasserstoff-Atome zu einem Helium-Atom fusioniert. Dabei wird Energie frei, welche wir  auf der Erde in Form von Strahlung (Licht und Wärme) erfahren.      
             </p>
+            <img class="infoImg" src="/images/PPProzess.svg" alt="">
             <img class="cancelButton" src="/images/cancel.png" alt="">
         </div>
 
@@ -131,11 +143,11 @@
                 <p class="infoBspText"><a href="http://simbad.u-strasbg.fr/simbad/sim-id?Ident=HR+6134">Antares</a> ist ein roter Riese. Im Vergleich zur Sonne hat er im Moment eine 10.000mal höhere Leuchtkraft, eine deutlich geringere Dichte und ein 800mal größeren Radius.</p>
             </div>
             
-            <img class="infoImg" src="/images/Giant.svg" alt="">
             <h3 class="infoHeading">Roter Riese</h3>
             <p class="infoText">
                 Wenn die Sonne ans Ende ihrer Lebenszeit kommt und der Wasserstoff komplett zu Helium fusioniert wurde, bläst die Sonne sich zu einem roten Riesenstern auf. Dabei steigt ihr Durchmesser um den Faktor 100 und ihre Leuchtkraft um den Faktor 10.000, da die resultierende Oberfläche entsprechend größer ist.
             </p>
+            <img class="infoImg" src="/images/Giant.svg" alt="">
             <img class="cancelButton" src="/images/cancel.png" alt="">
         </div>
 
@@ -146,12 +158,11 @@
                 <p class="infoBspText">Der <a href="https://www.nasa.gov/feature/goddard/2017/messier-57-the-ring-nebula">Ringnebel</a> ist ein Überrest eines sonnenähnlichen Sterns. Besonders bekannt ist er für seine klar erkennbaren, ehemaligen Schalen des Sterns, aus dem er enstanden ist.</p>
             </div>
             
-            <img class="infoImg" src="/images/Nebula.svg" alt="">
-            <img class= "infoImg" src="/images/Dwarf.svg" alt="">
             <h3 class="infoHeading">Planetarischer Nebel</h3>
             <p class="infoText">
                 Nach dem Riesenstadium wird die Sonne ihre Schalen abstoßen. Dieser Prozess dauert nur wenige Jahrtausende. Zurück bleibt ein weißer Zwergstern und die in rot dargestellte Wasserstoffschale sowie die in gelb dargestellte Heliumschale. Beide breiten sich sehr schnell aus, bis sie sich schließlich endgültig verflüchtigen.
             </p>
+            <img class="infoImg" src="/images/Nebula.svg" alt="">
             <img class="cancelButton" src="/images/cancel.png" alt="">
         </div>
 
@@ -162,11 +173,11 @@
                 <p class="infoBspText"><a href="https://www.nasa.gov/multimedia/imagegallery/image_feature_468.html">Sirius B</a> ist der Überrest eines Sterns im Doppelsternsystem Sirius. Er ist nur sehr schwer am Nachthimmel beobachtbar. In der Grafik ist er der kleine, weiße Punkt links unterhalb des Sterns. </p>
             </div>
             
-            <img class= "infoImg" src="/images/Dwarf.svg" alt="">
             <h3 class="infoHeading">Weißer Zwergstern</h3>
             <p class="infoText">
                 Nachdem die abgestoßenen Schalen nicht mehr sichtbar sind, bleibt nur noch ein weißer Zwergstern übrig. Dieser hat eine sehr geringe Leuchtkaft, aber eine verhältnismäßig hohe Oberflächentemperatur. Außerdem sind sie meist nicht größer als die Erde.
             </p>
+            <img class= "infoImg" src="/images/Dwarf.svg" alt="">
             <img class="cancelButton" src="/images/cancel.png" alt="">
         </div>
 
@@ -205,10 +216,7 @@
             <p id="scale-info">Größe ist nicht maßstabsgetreu und die Zeit nicht linear. <br> Mehr dazu in den Kapiteln 3.2 und 3.3 der Facharbeit.  </p>
         </death-diagram>
 
-        <div id="footerElement">
-            <div id="footerBox"></div>
-            <footer>2022 Robert Johannes Walz | Icons by Freepik from <a href="https://www.flaticon.com/authors/freepik">Flaticon</a></footer>
-        </div>
+        
 
         <div class="links">
             <div id="links-anchor"></div>
@@ -234,15 +242,11 @@
             <p class="quote"><span>"The global object is now considered a mistake that JavaScript can&apos;t get rid of, due to backward compatibility. <br>It affects performance negatively and is generally confusing." </span><a href="https://exploringjs.com/impatient-js/ch_variables-assignment.html#global-variables-and-the-global-object">(this)</a></p>
         </div>
 
-        <div id="navbar">
-            <nav> 
-                <div id="navbox"></div>
-                <a class="navlink" href="#titleimg">Home</a>
-                <a class="navlink" href="#aboutme-anchor">Über das Projekt</a>
-                <a class="navlink" href="#diagram">Sternenleben</a>
-                <a class="navlink" href="#links-anchor">Links</a>   
-            </nav>
-            
+        
+
+        <div id="footerElement">
+            <div id="footerBox"></div>
+            <footer>2022 Robert Johannes Walz | Icons by Freepik from <a href="https://www.flaticon.com/authors/freepik">Flaticon</a></footer>
         </div>
     </body>
 </html>
