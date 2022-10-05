@@ -173,7 +173,7 @@ image-diagram > .timespan {
 }
 
 .timespan > p {
-    font-size: 1vw;
+
     position: absolute;
     color: orange;
 }
@@ -195,7 +195,7 @@ image-diagram > .timespan > .dotted-line {
 }
 
 death-diagram > .timespan > .dotted-line {
-    left: 1.4em;
+    left: 2%;
 }
 
 .dot {
@@ -218,7 +218,7 @@ death-diagram > .timespan > .dotted-line {
 
 #life-stripe {
     width: 74%;
-    left: 5em;
+    left: 6.4%;
 }
 
 .stripe {
@@ -280,7 +280,7 @@ death-diagram > .timespan > .year-container{
     border-left: 3em solid orange;
     border-bottom: 0.7em solid transparent;
     position: relative;
-    bottom: 0.4em;
+    bottom: 0.45em;
     left: 80%;
 }
 
@@ -347,29 +347,28 @@ death-diagram > .images {
 }
 
 #arrow1 {
-    bottom: 10em;
-    left: 0em;  
+    bottom: 100%;
+    left: 0em; 
     transform: rotate(45deg);
 }
 
 #arrow2 {
-    bottom: 10em;
-    left: 7em;
+    bottom: 100%;
+    left: 90%;
     transform: rotate(135deg);
 }
 
 #arrow3 {
-    bottom: -3em;
+    bottom: -30%;
     left: 0em;
     transform: rotate(315deg);
 }
 
 #arrow4 {
-    bottom: -3em;
-    left: 7em;
+    bottom: -30%;
+    left: 90%;
     transform: rotate(225deg);
 }
-
 
 /* gas animation */
 

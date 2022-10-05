@@ -111,14 +111,37 @@
         height: 25em;
     }
 
-    .infoBox {
-        height: 50%;
+
+    #arrow1 {
+        bottom: 140%;
+        left: -40%; 
+    }
+    
+    #arrow2 {
+        bottom: 140%;
+        left: 30%;
+    }
+    
+    #arrow3 {
+        bottom: 40%;
+        left: -40%;
+    }
+    
+    #arrow4 {
+        bottom: 40%;
+        left: 30%;
     }
 
+
+    .infoBox {
+        height: 70%;
+        top:20%
+    }
     
 
     .infoBspBox {
-        height: 50%;
+        height: 70%;
+        top: 20%
     }
 
     .infoHeading {
@@ -142,10 +165,9 @@
     }
 
     #nebulaInfo > .infoImg {
-        max-width: 20em; 
-        left: 10em;
-        bottom: 2em;
-     }
+        max-width: 12em; 
+        margin-top: 8%;
+    }
 
     .infoBspHeading {
         font-size: 1.6vw;
@@ -196,7 +218,6 @@
         
     }
     
-    
 
 
     .year-container {
@@ -213,11 +234,6 @@
     }
 
 
-    #nebulaInfo > .infoImg {
-        max-width: 20em; 
-        left: 5%;
-        bottom: 10%;
-    }
     
 
 }
